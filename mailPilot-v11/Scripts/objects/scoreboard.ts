@@ -28,7 +28,7 @@ module objects {
         }
 
         update() {
-            this.labelText = "Durability: " + this.lives.toString() + " Cosmic Power: " + this.score.toString();
+            this.labelText = "Durability: " + this.lives.toString() + " Star Power: " + this.score.toString();
             this.label.text = this.labelText;
         }
 

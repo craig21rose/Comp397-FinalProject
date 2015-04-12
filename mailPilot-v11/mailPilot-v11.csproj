@@ -65,6 +65,7 @@
     <Content Include="assets\images\goldenstar.png" />
     <Content Include="assets\images\spaceship.png" />
     <Content Include="assets\sounds\explosion.mp3" />
+    <Content Include="assets\sounds\MusubareruSekai.mp3" />
     <Content Include="assets\sounds\power.mp3" />
     <Content Include="assets\sounds\RocketThrusters.ogg" />
     <None Include="Web.Debug.config">
@@ -75,7 +76,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="assets\sounds\soundtrack1.mp3" />
     <Content Include="css\app.css" />
     <Content Include="css\normalize.css" />
     <Content Include="index.html" />
