@@ -14,6 +14,7 @@
 // Mail Pilot Version 11 Description - Game Template
 
 module states {
+    //changes the game state to the difficulty state for selection
     export function playButtonClicked(event: MouseEvent) {
         stage.removeChild(game);
         ship.destroy();
@@ -22,7 +23,7 @@ module states {
         currentState = constants.DIFFICULTY_STATE;
         changeState(currentState);
     }
-
+    //changes the game state to the instructions state
     export function instructionsButtonClicked(event: MouseEvent) {
         stage.removeChild(game);
         ship.destroy();

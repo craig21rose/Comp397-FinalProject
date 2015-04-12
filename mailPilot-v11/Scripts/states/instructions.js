@@ -13,6 +13,7 @@
 // Mail Pilot Version 11 Description - Game Template
 var states;
 (function (states) {
+    //changes game state back to the main menu state
     function menuButtonClicked(event) {
         stage.removeChild(game);
         ship.destroy();
@@ -47,16 +48,19 @@ var states;
         //Display Instructions Label 
         gameNameLabel2 = new objects.Label(stage.canvas.width / 2, 120, "Instructions:");
         game.addChild(gameNameLabel2);
-        //Display Instructions
+        //Display Movement Instructions
         gameNameLabel3 = new objects.Label(stage.canvas.width / 2, 160, "Movement: Move Mouse Left or Right.");
         game.addChild(gameNameLabel3);
+        //Display Gameplay Instructions
         gameNameLabel4 = new objects.Label(stage.canvas.width / 2, 200, "Avoid Asteroids and other ships to stay a live.");
         game.addChild(gameNameLabel4);
+        //Display Enemy Gameplay Actions #1
         gameNameLabel5 = new objects.Label(stage.canvas.width / 2, 240, "Enemy Ships collect Star Power for themselves.");
         game.addChild(gameNameLabel5);
+        //Display Enemy Gameplay Actions #2
         gameNameLabel6 = new objects.Label(stage.canvas.width / 2, 280, "Contact with Enemies allows for loss of own power.");
         game.addChild(gameNameLabel6);
-        // Display Play Again Button
+        // Display Main Menu Button
         menuButton = new objects.Button(stage.canvas.width / 2, 350, "menuButton");
         game.addChild(menuButton);
         menuButton.addEventListener("click", menuButtonClicked);

@@ -19,12 +19,13 @@ module states {
         space.update();
         star.update();
         ship.update();
-        //boss.update();
 
+          //displays the varying number of asteroids that will appear
         for (var count = 1; count < constants.ASTEROID_NUM2; count++) {
             asteroids[count].update();
         }
 
+          //displays the varying number of enemy ships that will appear
         for (var count = 1; count < constants.BOSS_NUM3; count++) {
             boss[count].update();
         }
@@ -32,7 +33,7 @@ module states {
         collision.update();
         scoreboard.update();
 
-
+        //changes game state to the game over state when durability reaches 0
         if (scoreboard.lives <= 0) {
             stage.removeChild(game);
             ship.destroy();
@@ -52,15 +53,16 @@ module states {
         space = new objects.Space(stage, game);
         star = new objects.Star(stage, game);
         ship = new objects.Ship(stage, game);
-      //  boss = new objects.Boss(stage, game);
+
         // Show Cursor
         stage.cursor = "none";
 
-        // Create multiple clouds
+        // Create multiple asteroids
         for (var count = 0; count < constants.ASTEROID_NUM2; count++) {
             asteroids[count] = new objects.Asteroid(stage, game);
         }
 
+        // Create multiple enemy ships
         for (var count = 0; count < constants.BOSS_NUM3; count++) {
             boss[count] = new objects.Boss(stage, game);
         }

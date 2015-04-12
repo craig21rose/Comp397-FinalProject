@@ -13,6 +13,7 @@
 // Mail Pilot Version 11 Description - Game Template
 var states;
 (function (states) {
+    //switches state to easy gameplay state
     function easyButtonClicked(event) {
         stage.removeChild(game);
         ship.destroy();
@@ -22,6 +23,7 @@ var states;
         changeState(currentState);
     }
     states.easyButtonClicked = easyButtonClicked;
+    //switches state to normal gameplay state
     function normalButtonClicked(event) {
         stage.removeChild(game);
         ship.destroy();
@@ -31,6 +33,7 @@ var states;
         changeState(currentState);
     }
     states.normalButtonClicked = normalButtonClicked;
+    //switches state to hard gameplay state
     function hardButtonClicked(event) {
         stage.removeChild(game);
         ship.destroy();
@@ -61,14 +64,15 @@ var states;
         //Display Difficulty Label 
         gameNameLabel2 = new objects.Label(stage.canvas.width / 2, 120, "Choose your Level of Difficulty:");
         game.addChild(gameNameLabel2);
-        // Display Play Again Button
+        // Display Easy Mode Button
         easyButton = new objects.Button(stage.canvas.width / 2, 250, "EasyMode");
         game.addChild(easyButton);
         easyButton.addEventListener("click", easyButtonClicked);
-        // Display Instructions Button
+        // Display Normal Mode Button
         normalButton = new objects.Button(stage.canvas.width / 2, 300, "NormalMode");
         game.addChild(normalButton);
         normalButton.addEventListener("click", normalButtonClicked);
+        // Display Hard Mode Button
         hardButton = new objects.Button(stage.canvas.width / 2, 350, "HardMode");
         game.addChild(hardButton);
         hardButton.addEventListener("click", hardButtonClicked);

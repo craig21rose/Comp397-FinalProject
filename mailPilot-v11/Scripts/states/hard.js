@@ -25,6 +25,7 @@ var states;
         }
         collision.update();
         scoreboard.update();
+        //changes game state to the game over state when durability reaches 0
         if (scoreboard.lives <= 0) {
             stage.removeChild(game);
             ship.destroy();

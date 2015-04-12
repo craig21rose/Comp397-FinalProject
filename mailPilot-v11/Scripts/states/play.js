@@ -25,6 +25,7 @@ var states;
         }
         collision.update();
         scoreboard.update();
+        //changes game state to the game over state when durability reaches 0
         if (scoreboard.lives <= 0) {
             stage.removeChild(game);
             ship.destroy();
@@ -43,7 +44,6 @@ var states;
         space = new objects.Space(stage, game);
         star = new objects.Star(stage, game);
         ship = new objects.Ship(stage, game);
-        //  boss = new objects.Boss(stage, game);
         // Show Cursor
         stage.cursor = "none";
         for (var count = 0; count < constants.ASTEROID_NUM2; count++) {

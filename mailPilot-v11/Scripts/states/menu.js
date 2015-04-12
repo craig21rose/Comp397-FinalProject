@@ -13,6 +13,7 @@
 // Mail Pilot Version 11 Description - Game Template
 var states;
 (function (states) {
+    //changes the game state to the difficulty state for selection
     function playButtonClicked(event) {
         stage.removeChild(game);
         ship.destroy();
@@ -22,6 +23,7 @@ var states;
         changeState(currentState);
     }
     states.playButtonClicked = playButtonClicked;
+    //changes the game state to the instructions state
     function instructionsButtonClicked(event) {
         stage.removeChild(game);
         ship.destroy();

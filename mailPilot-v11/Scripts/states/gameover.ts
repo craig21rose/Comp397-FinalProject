@@ -18,7 +18,8 @@ module states {
         space.update();
     }
 
-    // Restart Game when Try Again Button is clicked
+    //Restart Game when Try Again Button is clicked
+    //Game is restarted to the Main Menu For Difficulty Selection
     export function tryAgainClicked(event: MouseEvent) {
         stage.removeChild(game);
         game.removeAllChildren();
