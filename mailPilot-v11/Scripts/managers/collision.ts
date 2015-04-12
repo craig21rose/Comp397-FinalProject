@@ -63,7 +63,7 @@ module managers {
             }
         }
 
-        // check collision between ship and any asteroid object
+        // check collision between ship and any enemy object
         private shipAndEnemy(boss: objects.Boss) {
             var p1: createjs.Point = new createjs.Point();
             var p2: createjs.Point = new createjs.Point();
@@ -79,7 +79,7 @@ module managers {
             }
         }
 
-        // check collision between ship and star
+        // check collision between enemy and star
         private EnemyAndStar(boss: objects.Boss) {
             var p1: createjs.Point = new createjs.Point();
             var p2: createjs.Point = new createjs.Point();
@@ -93,7 +93,7 @@ module managers {
                 this.star.reset();
             }
         }
-        // Utility Function to Check Collisions
+        // Utility Function to Check Collisions for varying number of asteroids and enemies.
         update() {
 
             for (var count = 0; count < constants.ASTEROID_NUM; count++)
@@ -113,7 +113,6 @@ module managers {
                 this.shipAndEnemy(this.boss[count]);
                 this.EnemyAndStar(this.boss[count]);
             }
-
              this.shipAndStar();          
         }
     }

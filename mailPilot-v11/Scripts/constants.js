@@ -15,8 +15,6 @@ var constants;
     // Game Constants
     constants.ASTEROID_NUM = 2;
     constants.ASTEROID_NUM2 = 3;
-    constants.ASTEROID_NUM3 = 4;
-    constants.BOSS_NUM = 2;
     constants.BOSS_NUM2 = 1;
     constants.BOSS_NUM3 = 2;
     constants.LABEL_FONT = "30px Times New Roman";

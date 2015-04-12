@@ -26,9 +26,8 @@ var game;
 var space;
 var ship;
 var star;
-//var boss: objects.Boss;
-var boss = [];
-var asteroids = []; // Clouds array;
+var boss = []; //Boss Array
+var asteroids = []; // Asteroids array;
 var scoreboard;
 var collision;
 var tryAgain;
@@ -75,27 +74,27 @@ function changeState(state) {
             states.menu();
             break;
         case constants.PLAY_STATE:
-            // instantiate play screen
+            // instantiate easy play screen
             currentStateFunction = states.playState;
             states.play();
             break;
         case constants.NORMAL_STATE:
-            // instantiate play screen
+            // instantiate normal play screen
             currentStateFunction = states.normalState;
             states.normalPlay();
             break;
         case constants.HARD_STATE:
-            // instantiate play screen
+            // instantiate hard play screen
             currentStateFunction = states.hardState;
             states.hardPlay();
             break;
         case constants.INSTRUCTION_STATE:
-            // instantiate play screen
+            // instantiate instruction screen
             currentStateFunction = states.instructionState;
             states.instructions();
             break;
         case constants.DIFFICULTY_STATE:
-            // instantiate play screen
+            // instantiate difficulty screen
             currentStateFunction = states.difficultyState;
             states.difficulty();
             break;

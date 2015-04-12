@@ -16,8 +16,6 @@ module constants {
     // Game Constants
     export var ASTEROID_NUM: number = 2;
     export var ASTEROID_NUM2: number = 3;
-    export var ASTEROID_NUM3: number = 4;
-    export var BOSS_NUM: number = 2;
     export var BOSS_NUM2: number = 1;
     export var BOSS_NUM3: number = 2;
     export var LABEL_FONT = "30px Times New Roman";

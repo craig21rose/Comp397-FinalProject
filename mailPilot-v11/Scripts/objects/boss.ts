@@ -6,7 +6,7 @@
 // Mail Pilot Version 11 Description - Game Template
 
 module objects {
-    // Asteroid class
+    // Boss class
     export class Boss {
         image: createjs.Bitmap;
         stage: createjs.Stage;
@@ -36,7 +36,7 @@ module objects {
             this._checkBounds();
         }
 
-        // Reset position of Asteroid to the left
+        // Reset position of Boss to the left
         reset() {
             this.image.y = -this.height;
             this.image.x = Math.floor(Math.random() * 640);
@@ -44,7 +44,7 @@ module objects {
 
         // PRIVATE METHODS 
         private _checkBounds() {
-            // check if asteroid has left the screen
+            // check if Boss has left the screen
             if (this.image.y >= (480 + this.height)) {
                 this.reset();
             }

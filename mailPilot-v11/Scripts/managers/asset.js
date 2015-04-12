@@ -12,8 +12,8 @@ var managers;
         { id: "asteroid", src: "assets/images/asteroid.png" },
         { id: "boss", src: "assets/images/starship.jpg" },
         { id: "engine", src: "assets/sounds/RocketThrusters.ogg" },
-        { id: "thunder", src: "assets/sounds/explode.ogg" },
-        { id: "yay", src: "assets/sounds/power.ogg" }
+        { id: "thunder", src: "assets/sounds/explosion.mp3" },
+        { id: "yay", src: "assets/sounds/power.mp3" }
     ];
     // ButtonPage Data Sheet
     //Display images based on locations on image

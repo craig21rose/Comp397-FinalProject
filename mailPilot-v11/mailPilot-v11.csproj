@@ -64,8 +64,8 @@
     <Content Include="assets\images\buttonpage.png" />
     <Content Include="assets\images\goldenstar.png" />
     <Content Include="assets\images\spaceship.png" />
-    <Content Include="assets\sounds\explode.ogg" />
-    <Content Include="assets\sounds\power.ogg" />
+    <Content Include="assets\sounds\explosion.mp3" />
+    <Content Include="assets\sounds\power.mp3" />
     <Content Include="assets\sounds\RocketThrusters.ogg" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
